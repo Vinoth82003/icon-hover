@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: #ddd;
+}
+
+.left-bar{
+    width: 70px;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.icon-container{
+    margin-top: 20px;
+    list-style: none;
+    position: absolute;
+    left: 10px;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+    position: relative;
+    cursor: pointer;
+    background: #fff;
+    transition: all .5s;
+    border-radius: 50px;
+}
+
+.icon:hover{
+    width: 200px;
+}
+
+.icon-box{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer; 
+}
+
+.inner-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #b1b1b1;
+    font-size: 28px;
+    transition: all .75s;
+    color: #fff;
+}
+
+.icon:hover .inner-icon{
+    background: var(--clr);
+}
+
+.text{
+    position: absolute;
+    font-size: 16px;
+    width: 0;
+    overflow: hidden;
+}
+
+.icon:hover .text{
+    transition: all .75s;
+    width: 100px;
+    color: var(--clr);
+    margin-right: 80px;
+}
+
+.icon:hover .fab{
+    transition: .75s;
+    transform: rotate(360deg);
+}
+
+.icon-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+}
