@@ -82,7 +82,7 @@
     transition: all .75s;
     width: 100px;
     color: var(--clr);
-    margin-right: 80px;
+    margin-right: 100px;
 }
 
 .icon:hover .fab{
